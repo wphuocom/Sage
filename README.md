@@ -44,3 +44,6 @@ Notes
 * After exiting the script 'runScript.py' you will need to do additional cleanup by killing any of the remaining Chrome processes still present.
 
 Let it continue as it loops through your domain list using your Chrome browser, the script will pause between 90 and 120 seconds on each page it navigates to. When it finishes the loop the script will close and respawn with a new IP address.
+
+![Image of Sage](https://images.suck-o.com/static/images/image_uploads.file_upload.b930c500450f6ff6.73637265656e73686f742e706e67.png)
+
