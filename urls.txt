@@ -1,0 +1,4 @@
+https://www.domain.com/
+https://www.domain.com/page1/
+https://www.domain.com/page2/
+https://www.domain.com/contact
