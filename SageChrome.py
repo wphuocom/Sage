@@ -86,7 +86,7 @@ def sage():
         
     for link in links:
         try:
-            ### OPEN FIREFOX BROWSER AND VISIT URLS ###
+            ### OPEN CHROME BROWSER AND VISIT URLS ###
             browser.get(str(link))            
             
             ### WAIT FOR BROWSER READY STATE ###
