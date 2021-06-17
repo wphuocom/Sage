@@ -4,7 +4,7 @@ Sage is a Python Script/SEO utility designed to automate browser services in ord
 
 How Sage Works
 --------------
-Sage effectively utilizes free proxy lists and the Selenium API to navigate to a website with browser automation (Selenium). On each execution a request is made to the proxy list for a new IP address. During this process the client (web browser) waits for an appropriate amount of time before transiting to a different section of your website or a new domain in your domain list. You specify each URL for the browser to navigate to in the domain list.
+Sage effectively utilizes free proxy lists and the Selenium API to navigate to a website with browser automation (Selenium). On each execution a request is made to the proxy list for a new IP address. During this process the client (web browser) waits for an appropriate amount of time before transiting to a different section of your website or a new domain in your domain list. You specify each URL for the browser to navigate to in the domain list (**urls.txt**).
 
 If a proxy in the proxylist fails to load, the script will stop itself and relaunch with a new IP address. The script will wait for a total of 90 seconds to attempt to receive the connection. We do this simply because proxies can often be quite slow or offline.
 
