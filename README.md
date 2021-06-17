@@ -12,11 +12,11 @@ If a proxy in the proxylist fails to load, the script will stop itself and relau
 Install
 -------
 * Install the Chrome Browser
-* Install Python2.7
+* Install Python 3.9
 * You will need to install:
 	* Selenium
 	* pip install Selenium
-* You will need to place the latest Chrome Driver (chromedriver.exe) on your OS environment path. https://sites.google.com/a/chromium.org/chromedriver/downloads
+* You will need to place the latest **stable** Chrome Driver (chromedriver.exe) on your OS environment path. https://sites.google.com/a/chromium.org/chromedriver/downloads
 
 
 Build Proxy List
@@ -30,7 +30,7 @@ Modify Script
 --------------
 * Create a domain/url list in urls.txt
 * Modify runChrome.py specifying the amount of times you wish to run the script
-		
+* Timestopper.crx is a browser extension for the project. It is designed to block window.alert and window.confirm dialog boxes. I found that some proxies would create confirm and alert dialogs boxes and they would halt the script. So I made this extension to prevent that. You can disable this extension simply by commenting out this line: `chrome_options.add_extension(os.getcwd() + '\Timestopper.crx')`		
 		
 Launching
 ---------
