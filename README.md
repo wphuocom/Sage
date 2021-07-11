@@ -41,7 +41,7 @@ Notes
 -----
 * You will not see results if browsing to a single page on a website. This has to do with how bounce rate is calculated from average session duration in Google Analytics.
 
-* After exiting the script 'runScript.py' you will need to do additional cleanup by killing any of the remaining Chrome processes still present.
+* After exiting the script 'runChrome.py' you will need to do additional cleanup by killing any of the remaining Chrome processes still present.
 
 Let it continue as it loops through your domain list using your Chrome browser, the script will pause between 90 and 120 seconds on each page it navigates to. When it finishes the loop the script will close and respawn with a new IP address.
 
