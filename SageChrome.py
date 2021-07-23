@@ -77,7 +77,7 @@ def sage():
         log("[-] Proxy: %s failed initial test" % (myProxy))
         try:
             log("[-] Failed proxy: %s removed from list" % (myProxy))
-            replaceAll("proxyalive.txt", myProxy + "\n", "")
+            replaceAll("proxylist.txt", myProxy + "\n", "")
         except:
             pass
         browser.quit()
@@ -86,7 +86,7 @@ def sage():
         
     for link in links:
         try:
-            ### OPEN CHROME BROWSER AND VISIT URLS ###
+            ### OPEN FIREFOX BROWSER AND VISIT URLS ###
             browser.get(str(link))            
             
             ### WAIT FOR BROWSER READY STATE ###
@@ -101,7 +101,7 @@ def sage():
             log("[-] Connection to proxy failed ... Closing browser")
             try:
                 log("[-] Failed proxy: %s removed from list" % (myProxy))
-                replaceAll("proxyalive.txt", myProxy + "\n", "")
+                replaceAll("proxylist.txt", myProxy + "\n", "")
             except:
                 pass
             browser.quit()
