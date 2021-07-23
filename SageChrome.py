@@ -70,7 +70,7 @@ def sage():
     browser.set_page_load_timeout(120)
     
     try:
-        browser.get("http://www.techshinobi.com/browser/test-page.html")
+        browser.get("https://www.techshinobi.com/browser/test-page.html")
         assert "Tech-Shinobi-Test-Page" in browser.title
         log("[+] Proxy: %s passed initial test" % (myProxy))
     except:
