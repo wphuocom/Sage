@@ -11,7 +11,7 @@ MAXCOUNT = 5000 ## 1 - MAXCOUNT
 for i in range(0, MAXCOUNT):
     i += 1
     print("[+] Launching Script %s of %s Times" % (i, MAXCOUNT))
-    os.system("python3 SageChrome.py")
+    os.system("python SageChrome.py")
 else:
     print("[+] Sage Has Finished it's Rotation")
 

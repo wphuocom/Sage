@@ -3,8 +3,12 @@ import os, sys, time, random
 import fileinput
 
 ### EXTERNAL LIBRARIES (SELENIUM)
+### pip install selenium
+### pip install webdriver-manager
 from selenium import webdriver
-#from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+from selenium.webdriver.chrome.service import Service
+# BETA
+# from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.proxy import *
 
@@ -65,8 +69,11 @@ def sage():
     chrome_options.add_argument('disable-infobars')
     chrome_options.add_argument("--proxy-server=%s" % myProxy)
     chrome_options.add_extension(os.getcwd() + '\Timestopper.crx')
+    # BETA
+    # s = Service(ChromeDriverManager().install())
+    # browser = webdriver.Chrome(service=s, options=chrome_options)
     browser = webdriver.Chrome(executable_path='chromedriver.exe',
-                              options=chrome_options)
+                               options=chrome_options)
     browser.set_page_load_timeout(120)
     
     try:
