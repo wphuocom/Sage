@@ -13,8 +13,7 @@ Install
 -------
 * Install the Chrome Browser
 * Install Python 3.9
-* You will need to install:
-	* Selenium
+* You will need to install Selenium:
 	* pip install Selenium
 * You will need to place the latest **stable** Chrome Driver (chromedriver.exe) on your OS environment path. https://sites.google.com/a/chromium.org/chromedriver/downloads
 
